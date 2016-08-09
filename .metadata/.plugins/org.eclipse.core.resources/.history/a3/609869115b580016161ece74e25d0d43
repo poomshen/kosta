@@ -1,0 +1,23 @@
+import java.util.HashSet;
+
+//Set 인터페이스 구현하는 클래스
+//특징 : 순서(x) , 중복(x)
+//HashSet 클래스
+
+public class Ex12_HashSet {
+	public static void main(String[] args) {
+		HashSet hs = new HashSet<>();
+		hs.add(1);
+		hs.add(130);
+		hs.add(144);
+		System.out.println(hs.toString());
+		System.out.println(hs.add(1));//중복 데이터 허락 (x)
+		System.out.println(hs.toString());
+		
+		hs.add("A");
+		hs.add("B");
+		hs.add("F");
+		System.out.println(hs.toString()); //넣은 순서와 상관 없이 출력됨
+		
+ 	}
+}

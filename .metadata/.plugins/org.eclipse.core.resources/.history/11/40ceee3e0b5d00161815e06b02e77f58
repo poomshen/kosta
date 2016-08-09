@@ -1,0 +1,36 @@
+//동기화
+//Thread (동시에 : 공유자원 )
+//화장실 (공유 ) >잠금장치 (화장실에서 문을 장그는 것 lock)
+
+class Wroom {
+	public void OpenDoor(String name){
+		System.out.println(name  + "님 화장실 입장 ^^");
+		for(int i = 0 ; i<10000 ; i++){
+			if(i == 1000){
+				System.out.println(name + "님  끙 !");
+			}
+		}
+		System.out.println(name + "님 시원하시죠 ..");
+	}
+}
+
+class Users extends Thread{
+	private  Wroom  wr ;
+	private String who;
+	
+	public Users(String  name , Wroom wr) {
+		this.who = name;
+		this.wr = wr;
+	}
+	
+	@Override
+	public void run() {
+		wr.OpenDoor(this.who);
+	}
+}
+ 
+public class Ex09_Sysnc_Thread {
+	public static void main(String[] args) {
+		
+	}
+}

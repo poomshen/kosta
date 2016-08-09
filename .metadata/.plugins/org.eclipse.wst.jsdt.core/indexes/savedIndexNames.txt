@@ -1,0 +1,9 @@
+INDEX VERSION 1.3+C:\kosta129\javaBasic\Labs\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+1541148141.index
+198019705.index
+2950284601.index
+4054718216.index
+1300953166.index
+1657330681.index
+4083487192.index
+1451960033.index

@@ -1,0 +1,39 @@
+import java.io.BufferedOutputStream;
+import java.io.DataOutputStream;
+import java.io.IOException;
+import java.net.ServerSocket;
+import java.net.Socket;
+import java.util.Scanner;
+
+public class Ex07_TCP_Chatt_Server {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		try {
+			ServerSocket  serverSocket = new ServerSocket(9999);
+			 Socket socket = serverSocket.accept();
+			 System.out.println("시스템 접속");
+			 
+			 class ServerSend extends Thread {
+				 @Override
+				public void run() {
+					 System.out.println("보내실 문자 :");
+					 String msg = sc.nextLine();
+					 try {
+						DataOutputStream  dos = new DataOutputStream(socket.getOutputStream());
+						dos.writeUTF(msg);
+						
+					} catch (IOException e) {
+						// TODO Auto-generated catch block
+						e.printStackTrace();
+					}
+				}
+			 }
+			 
+			 
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+	}
+}

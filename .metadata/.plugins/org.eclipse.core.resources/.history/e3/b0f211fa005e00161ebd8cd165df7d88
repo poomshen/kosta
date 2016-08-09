@@ -1,0 +1,56 @@
+import java.awt.Color;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.io.DataInputStream;
+import java.io.DataOutputStream;
+import java.net.Socket;
+
+import javax.swing.JFrame;
+import javax.swing.JScrollPane;
+import javax.swing.JTextArea;
+import javax.swing.JTextField;
+import javax.swing.ScrollPaneConstants;
+
+
+public class Ex08_TCP_Multi_Client extends JFrame {
+	JTextArea ta;//출력창
+	JTextField txtinput; //입력창
+	
+	public Ex08_TCP_Multi_Client(){
+		//UI
+		this.setTitle("Multi 채팅");
+		ta = new JTextArea();
+		txtinput = new JTextField();
+		JScrollPane sp = new JScrollPane(ta, ScrollPaneConstants.VERTICAL_SCROLLBAR_ALWAYS, 
+				                         ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
+		sp.setAutoscrolls(true);
+		ta.setBackground(Color.yellow);
+		ta.setLineWrap(true);//텍스트 자동 줄바꿈
+		ta.setEditable(false);//편집 안됨
+		
+		txtinput.setText("대화입력창");
+		this.add(sp,"Center");
+		this.add(txtinput,"South");
+		this.setSize(400, 500);
+		this.setVisible(true);
+	
+		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		
+		txtinput.requestFocus();
+		txtinput.selectAll();
+		
+		//이벤트 처리
+		//txtinput.addActionListener(this);
+		
+		
+	
+	}
+
+	public static void main(String[] args) {
+		Ex08_TCP_Multi_Client client = new Ex08_TCP_Multi_Client();
+
+	}
+
+
+
+}

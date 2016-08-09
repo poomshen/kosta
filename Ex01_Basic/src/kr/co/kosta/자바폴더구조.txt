@@ -1,0 +1,38 @@
+ -- package(폴더)
+ Tip) Ms: namespace
+ 
+ 생성)
+ kr.or.kosta
+ Src 폴더
+     > ko 
+        >or 
+          >kosta
+          
+ kosta 폴더안에서 클래스 생성
+ 
+ 접근 사용방법)
+ kr.or.kosta.Test (Text 클래스의 소속)
+ 
+ 다른 패키지에서 클래스를 생성하는 방법 
+ kr.or.kosta.Test t = new kr.or.kosta.Test();
+ import kr.or.kosta.*;
+ 
+ *패키지 명은 domain 주소값 쓰는 것 권장
+ 관용적은 :kr.or.kosta
+ 		:com.itworld
+ 		
+ 예)
+ A회사 h.class:
+ B회사 h.class:
+ 
+ 구매한 c회사: 충돌
+ Company > h.class ,h.class
+ 해결방안 각회사 고유한 도메인을 사용한 package 구조
+ A:kr.or.it.h
+ B:kr.or.world.h
+ 
+ 사용) import kr.or.it*
+ 	  h H = new h();
+ java Api 설명서 구조
+ 
+ import java.util.*;

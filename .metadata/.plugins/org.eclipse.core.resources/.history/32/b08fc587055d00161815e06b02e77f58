@@ -1,0 +1,18 @@
+
+public class Ex07_Daemon_Thread  implements Runnable{
+	static boolean autosave = false;
+	@Override
+	public void run() {
+		try {
+			Thread.sleep(3000);
+		} catch (Exception e) {
+			System.out.println(e.getMessage());
+		}
+		
+	}
+	public static void main(String[] args) {
+		if(autosave ){
+			
+		}
+	}
+}

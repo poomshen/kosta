@@ -1,0 +1,20 @@
+class Person{//default extends Object
+	int data;
+	public Person(int data) {
+		this.data = data;
+	}
+}
+
+public class Ex09_Object {
+	public static void main(String[] args) {
+		Person  p = new Person(12345);
+		Person  p2 = new Person(789);
+		
+		System.out.println("Object equals : "+ p.equals(p2));
+		System.out.println(p.hashCode());
+		System.out.println(p2.hashCode());
+		System.out.println("Object toString() : "+ p.toString());
+		System.out.println("Object toString() : "+ p2.toString());
+		
+	}
+}

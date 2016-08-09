@@ -1,0 +1,23 @@
+package Quze;
+
+class Fight extends Thread{
+	static int dang =0;
+	
+	public int damage(){
+		int dag = 0;
+		dag = (int) (Math.random()*3);
+		return dag;
+	}
+	
+	@Override
+	public void run() {
+		dang = damage();
+	}
+}
+
+public class Game_2 {
+	public static void main(String[] args) {
+		int hp_py = 10;
+		int hp_py2 = 10;
+	}
+}

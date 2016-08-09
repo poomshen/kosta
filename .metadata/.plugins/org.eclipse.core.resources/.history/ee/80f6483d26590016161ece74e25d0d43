@@ -1,0 +1,28 @@
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+
+//대상 : File
+//File 을 대상으로 (read, write)
+//FileInputStream
+//FileOutputStream
+
+//대상 파일:
+
+public class Ex03_Stream_File {
+	public static void main(String[] args) {
+		try {
+			FileInputStream fs = new FileInputStream("C:\\Temp\\file.txt");
+			int data = 0 ;
+			try {
+				while((data = fs.read())!=-1){
+					
+				}
+			} catch (IOException e) {
+				System.out.println(e.getMessage());
+			}
+		} catch (FileNotFoundException e) {
+			System.out.println(e.getMessage());
+		}
+	}
+}

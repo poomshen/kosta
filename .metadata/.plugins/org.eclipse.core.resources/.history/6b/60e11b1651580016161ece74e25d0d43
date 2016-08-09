@@ -1,0 +1,23 @@
+import java.util.concurrent.SynchronousQueue;
+
+//문자열 누적
+//String  str  ="A"
+//for (Str ="A") 10000번
+//STrign > stringBuff,stringBulider
+public class Ex10_StringBuffer {
+	public static void main(String[] args) {
+		String str = "A";
+		str += "B";
+		
+		StringBuffer sb = new StringBuffer();
+		System.out.println(sb.capacity());
+		sb.add("B");
+		
+		
+		
+		
+		//성능 테스트 
+		///시간 되시명
+		
+	}
+}

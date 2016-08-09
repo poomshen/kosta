@@ -1,0 +1,31 @@
+//사용
+//awt, swing, android 사용
+//android 사용 > 이벤트 제어
+
+//클래스 안에 클래스가 들어가는 형태
+//Inner class , Outer class
+/*
+	class OuterClass{
+		class InnerClass{
+		}
+	}
+
+*/
+class OuterClass{
+	public int pdate =100;
+	private int data  = 30;
+	
+	class InnerClass{
+		void msg(){
+			System.out.println("outer data :" + data);
+		}
+	}
+}
+
+public class Ex14_InnerClass {
+	public static void main(String[] args) {
+		OuterClass out = new OuterClass();
+		System.out.println("public 자원 : "+ out.pdate);
+	}
+
+}

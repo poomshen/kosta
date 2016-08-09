@@ -1,0 +1,13 @@
+/*
+    열거형(타입)
+   class  Cal{
+    public Static final int nim = 0;
+    
+*/
+
+
+public class Ex11_Enum {
+	public static void main(String[] args) {
+		
+	}
+}

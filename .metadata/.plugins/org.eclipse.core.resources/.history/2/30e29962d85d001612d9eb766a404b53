@@ -1,0 +1,27 @@
+import java.io.IOException;
+import java.net.ServerSocket;
+
+//서버: 클라이언트 간에 1:1 통신
+//서버 : read/ write 구현
+//클라이언트 : read / write 구현
+//Ex01 ~ Ex05  까지 read,Write (순차적으로 처리)
+//동시에 read/ Write 작업 이루어 졌으면 ...
+//Thread 사용
+//Client : read (Thread) , Write (Thread) 
+//Server : read (Thread) , Write (Thread) 
+
+public class Ex06_TCP_Chatt_Server {
+	
+	public static void main(String[] args) {
+		ServerSocket serverSocket =null;
+		
+		
+		try {
+		 serverSocket =	new ServerSocket(9999);
+		 System.out.println("클라이언트 접속 대기중...");
+		} catch (IOException e) {
+			System.out.println(e.getMessage());
+		}
+		
+	}
+}

@@ -1,0 +1,45 @@
+package Quze;
+class tongue extends Thread{
+	String tong = "";
+	String name;
+	public tongue(String name){
+		this.name = name;
+	}
+	@Override
+	public void run() {
+		runing ri = new runing();
+		for(int i=0; i<10 ; i++){
+			try {
+				Thread.sleep(500);
+				tong += "■";
+				System.out.println(name + tong);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
+		}
+		System.out.println(name+"완주 완료");
+	}
+}
+
+class runing extends Thread{
+	tongue t1 = new tongue("1번 말");
+	tongue t2 = new tongue("2번 말");
+	tongue t3 = new tongue("3번 말");
+	tongue t4 = new tongue("4번 말");
+	tongue t5 = new tongue("5번 말");
+	@Override
+	public void run() {
+		t1.start();
+		t2.start();
+		t3.start();
+		t4.start();
+		t5.start();
+	}
+}
+public class Game {
+	public static void main(String[] args) {
+		runing ru = new runing();
+		ru.start();
+		ru.stop();
+	}
+}

@@ -1,0 +1,21 @@
+class Test2 {
+	void print(){
+		System.out.println("부모 함수");
+	}
+}
+
+class Test3 extends Test2{
+	//부모클래스인 Test2 가 가지는 print () 함수의 재정의
+
+	@Override
+	void print() {
+		System.out.println("자식 함수");
+	}
+}
+
+public class Ex05_Inherit_Override {
+	public static void main(String[] args) {
+		Test3 t = new Test3();
+		t.print();
+	}
+}

@@ -1,0 +1,29 @@
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Set;
+
+//활용하기
+//HashMap<String,Person> : value 값으로 객체 사용
+class Student{
+	String name;
+	public Student(String name) {
+		this.name = name;
+	}
+}
+
+public class Ex16_HashMap_Generic_Object {
+	public static void main(String[] args) {
+		HashMap<String,Student> student = new HashMap<>();
+		student.put("kglim",new Student("임경균"));
+		student.put("hong",new Student("홍길동"));
+		
+		Student std = student.get("kglim");
+		System.out.println(std.name);
+		
+		Set set = student.entrySet();
+		Iterator it2 = set.iterator();
+		while(it2.hasNext()){
+			System.out.println(it2.next());
+		}
+	}
+}

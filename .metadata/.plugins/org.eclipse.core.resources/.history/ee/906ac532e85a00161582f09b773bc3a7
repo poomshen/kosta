@@ -1,0 +1,40 @@
+package Quze;
+
+class Fight extends Thread{
+	static int dang =0;
+	
+	public int damage(){
+		int dag = 0;
+		dag = (int) (Math.random()*3);
+		return dag;
+	}
+	
+	@Override
+	public void run() {
+		for(int i = 0; i<100 ; i++){
+			dang = damage();
+			System.out.println(dang+ "¶§¸²");
+			try {
+				Thread.sleep(500);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		}
+	}
+}
+
+public class Game_2 {
+	public static void main(String[] args) {
+		int hp_py = 30;
+		int hp_py2 = 30;
+		
+		Fight py = new Fight();
+		py.start();
+		for(int i= hp_py; hp_py>=0;){
+			hp_py -= py.dang;
+		}
+		System.out.println(hp_py+"Á×À½");
+		
+	}
+}

@@ -1,0 +1,8 @@
+import java.io.Serializable;
+
+//객체 통신
+//직렬화 (객체를 분해해서 줄을 세워 보내는 과정
+//단 조건 (클래스 설계시 단서 : implements Serializable)
+public class UserInfo implements Serializable{
+
+}

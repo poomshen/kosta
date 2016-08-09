@@ -1,0 +1,9 @@
+package team_type;
+
+public class team_DTO {
+	String teamName;//팀 이름
+	String supervisor;//감독
+	String supervisorPass;//감독 패스 워드
+	boolean register;//참가 여부
+
+}

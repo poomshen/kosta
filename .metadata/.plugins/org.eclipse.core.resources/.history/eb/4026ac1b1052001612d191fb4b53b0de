@@ -1,0 +1,50 @@
+//this : 객체 자신을 가리키는 this
+//     : 생성자를 호출하는 this
+
+//용법  : super(상속관계)
+//상속관계에서 부모자원에 접근 할수 있느 키워드
+
+//super(참조값) : 부모의 주소
+//1. supre :부모의 생성자 호출
+//2. super :부모의 주소값을 가르킨다.(부모자원접근)
+
+class Base{
+	String basename;
+	Base(){
+		System.out.println("기본 생성자");
+	}
+	Base(String baname){
+		this.basename = baname;
+		System.out.println("basename : " + this.basename);
+	}
+	void BaseMethod(){
+		System.out.println("BaseMethod");
+	}
+}
+
+class Derived extends Base{
+	String dname;
+	public Derived() {
+		System.out.println("Derived 기본 생성자");
+	}
+	Derived(String dname){
+		this.dname = dname;
+		System.out.println("dname :" + this.dname);
+	}
+	void DericedMethod(){
+		System.out.println("DericedMethod");
+	}
+}
+
+public class Ex06_Inherit_Super {
+	public static void main(String[] args) {
+		//1.기본
+		//default constructor (부모 : 기본 생성자 , 자식: 기본 생성자_
+//		Derived d = new Derived();
+		
+		//2.자식
+		Derived d2= new Derived("홍길동");
+		
+		
+	}
+}

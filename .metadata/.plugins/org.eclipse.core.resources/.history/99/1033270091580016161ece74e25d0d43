@@ -1,0 +1,39 @@
+class Person{//default extends Object
+	int data;
+	public Person(int data) {
+		this.data = data;
+	}
+}
+
+class Emp{
+	@Override
+	public String toString() {
+		return "object 재정의";
+	}
+}
+
+public class Ex09_Object {
+	public static void main(String[] args) {
+		Person  p = new Person(12345);
+		Person  p2 = new Person(789);
+		
+		System.out.println("Object equals : "+ p.equals(p2));
+		System.out.println(p.hashCode());
+		System.out.println(p2.hashCode());
+		System.out.println("Object toString() : "+ p.toString());
+		System.out.println("Object toString() : "+ p2.toString());
+		
+		Emp  e = new Emp();
+		System.out.println(e.toString());//재정의
+		
+		Person p3 = p2; //p2 가지지고 있는곳 은 주소값
+		System.out.println("Object equals : "+ p2.equals(p3));
+		System.out.println(p2.hashCode());
+		System.out.println(p3.hashCode());
+		
+		//instanceof 같은 복용하시면 타입 비교
+		// 여러분인 원하면 필요에 따라서 (equlals, toString ) 재정의
+		
+		
+	}
+}

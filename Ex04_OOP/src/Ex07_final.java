@@ -1,0 +1,53 @@
+//변수 <-> 상수
+//상수 : 한번 값이 정해지면 변경 불가
+//상수 : 관용적으로 대문자 표기
+
+//java : final int NUM = 100;
+//c#   : const int NUM = 200;
+
+//final 키워드
+//클래스 앞에 : final  class  TT{} 상속할수 없는 클래스 생성
+//함수   앞에 : final method()
+			//final void M() : 상속관계에서 재정의 금지
+//주로 상수 (변수)
+
+class Vcard {
+	final String KIND = "heart"; //상수
+	final int NUM = 100;
+	public void method(){
+		System.out.println(Math.PI);//시스템 상수
+	}
+	
+}
+class Vcard2 {
+	final String KIND;
+	final int NUM;
+	//상수가 객체가 될때 값을 가지는 보장성 코드
+//	public Vcard2() {
+//		this.KIND ="";
+//		this.NUM = 10;
+//	}
+	public Vcard2(String kind , int num) {
+		this.KIND = kind;
+		this.NUM  =num;
+		
+	}
+	//설계한 이유
+	//객체마다 다른 상수값을 가지고 하겠다.
+}
+
+public class Ex07_final {
+	public static void main(String[] args) {
+		Vcard v = new  Vcard();
+//		v.KIND = "aaa"; error
+		//참조변수 입장에서는 출력만 가능
+		System.out.println(v.KIND + " : " + v.NUM);
+		v.method();
+		
+		Vcard2 v2 = new Vcard2("A", 10);
+		Vcard2 v3 = new Vcard2("B", 20);
+		Vcard2 v4 = new Vcard2("c", 30);
+		
+		
+	}
+}
