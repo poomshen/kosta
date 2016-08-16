@@ -1,0 +1,6 @@
+package team_function;
+
+//관리자(감독)이 선수 관리 와 팀 관리를 하는 함수 들을 모아둔 클래스
+public class Team_Match {
+
+}

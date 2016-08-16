@@ -1,0 +1,9 @@
+package teamDTO;
+
+//경기 내용
+public class MatchContentDTO {
+	  int leftGoal;//
+	  int rightGoal;//
+	  
+	  
+}

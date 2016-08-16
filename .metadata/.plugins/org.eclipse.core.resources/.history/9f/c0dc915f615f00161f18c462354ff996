@@ -1,0 +1,7 @@
+package teamFunction;
+
+public class TeamMain {
+	public static void main(String[] args) {
+		Match m = new Match();
+	}
+}

@@ -1,5 +1,0 @@
-
-public class trouble {
-	String trouble;
-	String reply;
-}

@@ -1,0 +1,11 @@
+package team_type;
+
+interface situation_DTO {
+	int condition = 100;//컨디션
+	boolean possible = true;//출전 가능 여부
+	boolean key_player;//주전인지 아닌지 
+	
+	boolean possibleCk(){
+		
+	}
+}

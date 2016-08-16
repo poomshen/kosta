@@ -1,0 +1,10 @@
+package teamDTO;
+
+import java.util.HashMap;
+
+//경기 일정
+public class SchedulesGameDTO {
+	int match_time;//경기 일자
+	String match_place = "운동장";//경기 장소
+	HashMap<String, TeamDTO> teamlist;//팀 리스트 ///팀이름 ,팀객체
+}

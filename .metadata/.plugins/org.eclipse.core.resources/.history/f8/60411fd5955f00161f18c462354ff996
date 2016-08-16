@@ -1,0 +1,21 @@
+package teamFunction;
+
+public class TeamMain {
+	public static void main(String[] args) {
+		FileDB db  = new FileDB();
+		db.playerDBin();
+//		db.res_match_First();
+//		db.res_match_quarter();
+//		db.res_match_semi();
+//		db.res_match_final();
+		Match m = new Match();
+		OutPrint print = new OutPrint();
+		m.match_First();
+		m.quarter_Final();
+		print.login_OutPrint();
+		
+		
+		
+		
+	}
+}

@@ -1,9 +1,0 @@
-//단어 맞추기 게임
-//단어 맞추는 창(입력) : 일정한 시간이 부여 (시간)
-
-//Single_Thread (main)
-public class Ex03_Single_word_Game {
-	public static void main(String[] args) {
-		String inputdata = 
-	}
-}

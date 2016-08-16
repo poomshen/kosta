@@ -1,0 +1,6 @@
+package team_function;
+
+//경기에 영항을 미치는 함수들만 모아둔 클래스
+public class Match {
+
+}

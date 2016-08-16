@@ -1,0 +1,27 @@
+package teamFunction;
+
+import java.util.concurrent.SynchronousQueue;
+
+public class thread_t extends Thread {
+
+	@Override
+	public void run() {
+		System.out.println("매칭 중입니다");
+		String msg = ".";
+		try {
+			for(int y =0 ; y<2 ; y++){
+			thread_t.sleep(800);
+			for(int i = 0; i<4 ; i++){
+			thread_t.sleep(800);
+			System.out.print(msg);
+			}
+			System.out.println();
+			}
+			System.out.println("매칭이 완료 됬습니다.");
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+	}
+}

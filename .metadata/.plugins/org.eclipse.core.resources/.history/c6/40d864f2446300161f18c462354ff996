@@ -1,0 +1,23 @@
+package Ex01;
+
+//public interface TimeProvider{
+//	public void  setHours(int hours);
+//	public int getTime();
+//}
+
+public class TimeReminder{
+	// implements TimeProvider{
+
+//	@Override
+//	public void setHours(int hours) {
+//		// TODO Auto-generated method stub
+//		
+//	}
+
+//	@Override
+//	public int getTime() {
+//		// TODO Auto-generated method stub
+//		return 0;
+//	}
+
+}

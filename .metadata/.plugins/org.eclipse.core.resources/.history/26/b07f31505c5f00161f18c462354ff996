@@ -1,0 +1,104 @@
+package teamFunction;
+
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.util.ArrayList;
+
+import teamDTO.PlayerDTO;
+import teamDTO.SituationDTO;
+import teamDTO.TeamDTO;
+
+//파일 입출력 관련 클래스
+public class FileDB {
+	public static ArrayList<TeamDTO> teamAll = new ArrayList<TeamDTO>();
+	static String[] array = { "광주", "서울", "성남", "전북", "전남", "인천", "제주", "포항" };
+	//파일 뽑아되는것들
+	//선수 뽑아와야하고
+	
+	//
+	static public void playerDBout(){
+	
+		File file = new File("광주2.txt");
+		try {
+			FileWriter writer = new FileWriter(file);
+			ArrayList<PlayerDTO> list = new ArrayList<PlayerDTO>();
+			list =teamAll.get(0).getPlaylist();
+			String msg  = (teamAll.get(0).getPlaylist().get(0).isKeyPlayer())?"Y":"N";
+			String mg = "";
+			for(PlayerDTO a : list){
+				mg = (a.isKeyPlayer())?"주전":"후보";
+				msg += "!"+a.getName()+"@"+a.getNober()+"#"+a.getPosition()+"$"+mg+"%";
+			}
+			writer.write(msg);
+			writer.close();
+		} catch (IOException e) {
+			System.out.println(e.getMessage());
+		}
+		
+	}
+	
+	static public void playerDBin(){
+		for(int i =0 ; i < array.length ; i++){
+		String st = array[i]+".txt";
+		File file = new File(st);
+		try {
+			FileReader reader = new FileReader(file);
+			int date =0;
+			String name = "";
+			String nober = "";
+			String position ="";
+			String keyPlayer = "";
+			String total ="";
+			boolean key;
+			boolean key2 = true;
+			PlayerDTO player;
+			ArrayList<PlayerDTO> playerDTOs = new ArrayList<>();
+				while((date = reader.read()) != -1 ){
+					if('!'==date){
+						total = "";
+					}else if('@'==date){
+						name = total;
+						total = "";
+					}else if('#' == date){
+						nober = total;
+						total = "";
+					}else if('$' == date){
+						position = total;
+						total = "";
+					}else if ('%'== date) {
+						keyPlayer = total;
+						total = "";
+						key=(keyPlayer.equals("후보"))?false:true;
+						player = new PlayerDTO();
+						player.allPlayer(name, Integer.parseInt(nober), position,key);
+						playerDTOs.add(player);
+					}else if('Y'== date){
+						total = "";
+						key2 = true;
+					}else if('N' == date){
+						total = "";
+						key2 = false;
+					}else {
+						total += (char)date;
+					}
+				}
+				teamAll.add(new TeamDTO(array[i], "1234", key2, playerDTOs));
+		} catch (IOException e) {
+			System.out.println(e.getMessage());
+		}
+		}
+	}
+	
+	
+	
+	
+	public static void main(String[] args) {
+		playerDBin();
+		System.out.println(teamAll.get(1).getPlaylist().get(0));
+//		System.out.println(teamAll.get(0).getPlaylist().toString());
+//		playerDBout();
+	}
+}

@@ -1,0 +1,9 @@
+package teamDTO;
+
+//선수 상태
+public class SituationDTO {
+	int condition; //선수 컨디션
+	boolean matchCk; //경기 참가 여부
+	boolean keyPlayer; //후보인지 아닌지
+	
+}

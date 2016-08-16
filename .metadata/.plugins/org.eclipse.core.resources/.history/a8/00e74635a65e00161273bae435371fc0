@@ -1,0 +1,8 @@
+package teamDTO;
+
+//선수
+public class PlayerDTO {
+	String name; //이름
+	int nober; //등번호 
+//	SituationDTO situation;
+}

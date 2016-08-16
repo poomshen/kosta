@@ -1,0 +1,14 @@
+package team_type;
+
+public abstract class situation_DTO {
+	int condition;//컨디션
+	boolean possible = true;//출전 가능 여부
+	boolean key_player;//주전인지 아닌지 
+	
+	public boolean possibleck(){//컨디션 에 따른 출전 여부
+		if(condition ==0){
+			possible = false;
+		}
+		return possible;
+	}
+}
