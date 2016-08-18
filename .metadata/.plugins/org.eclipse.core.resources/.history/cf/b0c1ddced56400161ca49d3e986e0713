@@ -1,0 +1,30 @@
+package Quiz01;
+
+import java.util.Scanner;
+
+public class Myorber {
+	Itme [] its = new Itme()[5];
+	
+	
+	public static void main(String[] args) {
+		Scanner sc =new Scanner(System.in);
+		
+		System.out.println("상품을 입력하세요");
+		System.out.print("상품 :");
+		String name = sc.nextLine();
+		System.out.print("상품 id :");
+		String id = sc.nextLine();
+		System.out.print("메이커 :");
+		String maker  = sc.nextLine();
+		System.out.print("상품 개수 :");
+		int qty = sc.nextInt();
+		
+		Itme  it = new Itme(id, name, maker);
+		Orber obr = new Orber(it , qty);
+		
+		
+		
+		
+	}
+
+}

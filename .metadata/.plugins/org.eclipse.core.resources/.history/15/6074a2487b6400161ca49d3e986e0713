@@ -1,0 +1,6 @@
+package Quiz01;
+
+public class Orber {
+	Itme itme;
+	int qty;
+}
