@@ -1,0 +1,14 @@
+package FactoryTest01;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class ElevatorManager {
+	private List<ElevatorController> controllers;
+	private ThroughputScheduler scheduler;
+	
+	//주어진 수 만크의 ElevatorController를 생성함
+	public ElevatorManager(int controllerCount) {
+		controllerCount = new ArrayList<ElevatorController>(controllerCount);
+	}
+}

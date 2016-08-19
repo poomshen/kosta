@@ -1,0 +1,12 @@
+package FactoryTest01;
+
+public class ElevatorController {
+	private  int id;//¿¤¸®º£ÀÌÅÍ id
+	private int curFloor; //ÇöÁ¦ Ãş
+	
+	public ElevatorController(int id){
+		this.id = id;
+		curFloor =1;
+	}
+	
+}
