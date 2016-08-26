@@ -8,6 +8,7 @@
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="package FactoryTest01;"/>
 			<item value="&#x09;&#x09;&#x09;&#x09;int num = 0;"/>
 			<item value="if (args[0].equals(&quot;cd&quot;) &amp;&amp; (args.length == 1)) {"/>
 			<item value="import java.io.File;"/>
@@ -15,16 +16,15 @@
 			<item value="//객체 배열"/>
 			<item value="45"/>
 			<item value="package data_bank;"/>
-			<item value="package main;"/>
 		</list>
 		<list key="replacehistory">
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
-		<item value="1382" key="DIALOG_WIDTH"/>
+		<item value="1366" key="DIALOG_WIDTH"/>
 		<item value="1|맑은 고딕|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|맑은 고딕" key="DIALOG_FONT_NAME"/>
-		<item value="744" key="DIALOG_HEIGHT"/>
-		<item value="0" key="DIALOG_X_ORIGIN"/>
-		<item value="0" key="DIALOG_Y_ORIGIN"/>
+		<item value="728" key="DIALOG_HEIGHT"/>
+		<item value="8" key="DIALOG_X_ORIGIN"/>
+		<item value="8" key="DIALOG_Y_ORIGIN"/>
 	</section>
 </section>

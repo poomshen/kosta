@@ -1,0 +1,7 @@
+package FactoryTest01;
+
+public enum Direction {
+
+	UP,DOWM
+
+}

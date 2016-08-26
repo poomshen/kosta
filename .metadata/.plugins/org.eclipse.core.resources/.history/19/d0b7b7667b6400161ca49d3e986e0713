@@ -1,7 +1,0 @@
-package Quiz01;
-
-public class Itme {
-	String id;
-	String name;
-	String maker;
-}

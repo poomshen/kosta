@@ -1,9 +1,0 @@
-package teamDTO;
-
-//°æ±â ³»¿ë
-public class MatchContentDTO {
-	  int leftGoal;//¿ì¸®ÆÀ °ñ
-	  int rightGoal;//»ó´ëÆÀ °ñ
-	  boolean leftVictory;//¿ì¸®ÆÀ ½ÂÆÐ
-	  boolean rightVictory;//»ó´ëÆÀ ½ÂÆÐ
-}

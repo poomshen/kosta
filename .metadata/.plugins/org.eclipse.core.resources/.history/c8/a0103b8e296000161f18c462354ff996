@@ -1,8 +1,0 @@
-import teamFunction.OutPrint;
-
-public class Main {
-	public static void main(String[] args) {
-		OutPrint outPrint = new OutPrint();
-		outPrint.login_OutPrint();
-	}
-}

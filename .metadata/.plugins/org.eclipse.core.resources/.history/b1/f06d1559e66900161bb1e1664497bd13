@@ -1,0 +1,11 @@
+package FactoryTest02;
+
+public class HyundaiMotor extends Motor {
+
+	@Override
+	protected void moveMotor(Direction direction) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

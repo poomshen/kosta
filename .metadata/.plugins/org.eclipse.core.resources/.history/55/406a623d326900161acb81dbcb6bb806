@@ -1,0 +1,16 @@
+package FactoryMethod;
+
+public abstract class PlayerFactory {
+	public abstract Player createPlayer();
+	public abstract void redusterKBO(Player p);
+	public abstract void redusterMLB(Player p);
+	public abstract void redusterNPB(Player p);
+	
+	public void create(Player p){
+		p = createPlayer();
+		redusterKBO(p);
+		redusterMLB(p);
+		redusterNPB(p);
+	}
+	
+}

@@ -1,0 +1,7 @@
+package FactoryTest01;
+
+public class Direction {
+
+	public static  Direction UP;
+
+}

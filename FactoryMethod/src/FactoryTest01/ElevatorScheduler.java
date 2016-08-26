@@ -1,9 +1,14 @@
 package FactoryTest01;
 
-public class ElevatorScheduler {
+public interface ElevatorScheduler {
 
-	public int selectElevator(ElevatorManager elevatorManager, int destination, Direction direction) {
+	public static int selectElevator(ElevatorManager elevatorManager, int destination, Direction direction) {
 		return 0;
+	}
+
+	public static ElevatorScheduler getInstance() {
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 }

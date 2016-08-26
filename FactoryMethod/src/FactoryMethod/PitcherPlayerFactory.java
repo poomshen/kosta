@@ -1,0 +1,42 @@
+package FactoryMethod;
+
+public  class PitcherPlayerFactory extends PlayerFactory {
+	public PitcherPlayerFactory() {
+
+	}
+	
+	@Override
+	public Player createPlayer(String name , int age) {
+		PitcherPlayer p =  new PitcherPlayer();
+		p.setAge(age);
+		p.setName(name);
+		p.batting_Ball(5);
+		p.throw_Ball(6);
+		System.out.println(p.getAge() + "  " + p.getName());
+		return p;
+	}
+
+	@Override
+	public void redusterKBO(Player p) {
+		if(p.getAge() > 20 && p.getAge() < 30 ){
+			System.out.println("´ç½ÅÀÇ ÆÀÀº redusterKBO");
+		}
+		
+	}
+
+	@Override
+	public void redusterMLB(Player p) {
+		if(p.getAge() > 30 && p.getAge()< 40){
+			System.out.println("´ç½ÅÀÇ ÆÀÀº redusterMLB");
+		}
+		
+	}
+
+	@Override
+	public void redusterNPB(Player p) {
+		if(p.getAge() > 10 && p.getAge()< 20){
+			System.out.println("´ç½ÅÀÇ ÆÀÀº redusterNPB");
+		}
+	}
+	
+}

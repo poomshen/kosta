@@ -1,0 +1,17 @@
+package FactoryMethod;
+
+public class PitcherPlayer extends Player {
+
+	@Override
+	public void batting_Ball(int ball) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void throw_Ball(int ball) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

@@ -1,0 +1,12 @@
+package FactoryTest01;
+
+public class Client {
+	public static void main(String[] args) {
+		ElevatorManager emWithResponseTimeScheduler =
+		new ElevatorManager(2);
+		emWithResponseTimeScheduler.requestElevator(10, Direction.UP);
+		
+	}
+				
+
+}

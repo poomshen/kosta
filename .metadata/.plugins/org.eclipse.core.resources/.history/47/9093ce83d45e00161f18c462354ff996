@@ -1,6 +1,0 @@
-package teamFunction;
-
-//출력 관련 함수들을 모아둔 클래스
-public class OutPnt {
-
-}

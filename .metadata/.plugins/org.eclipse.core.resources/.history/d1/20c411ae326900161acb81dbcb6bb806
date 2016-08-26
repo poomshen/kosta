@@ -1,0 +1,32 @@
+package FactoryMethod;
+
+public  class PitcherPlayerFactory extends PlayerFactory {
+
+	@Override
+	public Player createPlayer() {
+		Player p = new PitcherPlayer();
+		p.setAge(10);
+		p.setName("æ»¡§»Ø");
+		p.batting_Ball(5);
+		p.throw_Ball(6);
+		return null;
+	}
+
+	@Override
+	public void redusterKBO(Player p) {
+		
+	}
+
+	@Override
+	public void redusterMLB(Player p) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void redusterNPB(Player p) {
+		// TODO Auto-generated method stub
+		
+	}
+	
+}

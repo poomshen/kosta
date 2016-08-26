@@ -1,9 +1,0 @@
-package team_type;
-
-public class situation_DTO {
-	int condition;//컨디션
-	boolean possible;//출전 가능 여부
-	boolean key_player;//주전인지 아닌지 
-	
-	
-}

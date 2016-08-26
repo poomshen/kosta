@@ -1,7 +1,0 @@
-package team_type;
-
-public class Schedules_gamesDTO{
-	int  match_time ;//경기 시간
-	String match_place ;//경기 장소
-	
-}

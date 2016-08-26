@@ -1,0 +1,9 @@
+package framework;
+
+public abstract class ItemCreator {
+	private Item create() {
+		Item item;
+		return item;
+
+	}
+}

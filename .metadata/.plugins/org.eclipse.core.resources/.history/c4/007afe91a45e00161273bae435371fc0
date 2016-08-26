@@ -1,7 +1,0 @@
-package teamDTO;
-
-public class PlayerDTO {
-	String name;
-	int nober; 
-	
-}

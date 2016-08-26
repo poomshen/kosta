@@ -1,0 +1,16 @@
+package FactoryMethod;
+
+public class PitcherPlayer extends Player {
+
+	@Override
+	public void batting_Ball(int ball) {
+		System.out.println("볼을 친다.");
+		
+	}
+
+	@Override
+	public void throw_Ball(int ball) {
+		System.out.println("볼을 던진다.");
+	}
+
+}

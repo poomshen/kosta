@@ -1,0 +1,8 @@
+package concrete;
+
+import framework.ItemCreator;
+
+public class HpCreator extends ItemCreator{
+	
+
+}

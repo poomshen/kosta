@@ -1,6 +1,0 @@
-package team_function;
-
-//경기 결과에 영향을 미치는 함수만 모아놓은 클래스
-public class EndResult {
-
-}
